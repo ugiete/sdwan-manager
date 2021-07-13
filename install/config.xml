@@ -1,0 +1,22 @@
+<Config>
+    <Host
+        interface="enp4s0"
+        ip="192.168.1.10"
+        netmask="24"
+    />
+
+    <Appliance
+        ip="192.168.1.10"
+        netmask="24"
+    >
+        <DHCP
+            start="192.168.1.100"
+            end="192.168.1.200"
+        />
+    </Appliance>
+
+    <Images 
+        boot="path/to/image_init_ram"
+        sysupgrade="path/to/image_sysupgrade"
+    />
+</Config>
